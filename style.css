@@ -3,13 +3,13 @@
     margin: 0px;
     box-sizing: border-box;
     list-style: none;
-    font-family: 'poppins', sans-serif;    
+    font-family: 'Inconsolata', monospace;    
 }
 .main{
     width: 100%;
     height: 100vh;
-    background-color: #252839;
-}
+    background-color: #0a192f;
+}   
 body{
     display: flex;
     align-items: center;
@@ -20,40 +20,71 @@ body{
 .text-box{
     color: #fff;
     position: absolute;
-    top: 50%;
-    right: 35%;
+    top: 45%;
+    right: 20%;
+    font-size: 25px;
+    text-align: center;
+}
+
+.text-box e{
+    color: #64ffda;
+    font-size: 15px;
 }
 
 
 .menu{
      justify-content: space-around;
     width: 100%;
-     min-height: 7vh;
+     min-height: 9vh;
     background-color: #121227;
+    background: transparent;
 }
 #logo{
     color: #fff;
-    font-size: 20px;
+    font-size: 5px;
     letter-spacing: 2px;
     float: left;
     padding: 24px;
+    background: url(logo.png);
+    
+}
+.resize{
+    width: 50px;
+    height: auto;
+    margin: -5px 3px;
+    padding-top: 2rem;
+    padding: -3px;
 }
 
 .menu a{
     text-decoration: none;
-    align-items: center;
+    margin: 20px;
     color: #fff;
-    font-size: 18px;
-    letter-spacing: 2px;
-    padding: 20px;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    display: inline-block;
-
+    font-size: 15px;
+    letter-spacing: 2px;;
+    padding: 6px;
+    display:inline-block;
+    
 }
+.menu e{
+    color: #64ffda;
+    
+}
+.menu p{
+
+    color: #64ffda;
+    margin: 20px;
+    font-size: 15px;
+    letter-spacing: 2px;
+    padding: 10px;
+    background-color: transparent;
+    border-radius:5rem;
+    line-height: 1cm;
+    border: 15px #64ffda;
+    float: right;
+}
+
 .menu a:hover{
-    background-color: darkblue;
-    transition: 0.5s;
-    letter-spacing: 3px;
-    text-transform: uppercase;
+    color: #64ffda;
+
 }
