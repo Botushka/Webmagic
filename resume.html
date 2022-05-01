@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Hey, I'm Stevon!</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+</head>
+<body>
+    <div class="main">
+        <div class="menu">
+            <img class="resize" src="logo.png">
+            <div class="social-media">
+            <a href="https://www.linkedin.com/in/stevon-keel-97956b224/"><ion-icon name="logo-linkedin"></ion-icon>
+                <a href="https://github.com/Botushka"><ion-icon name="logo-github"></ion-icon></a>
+                <a href="https://www.instagram.com/stevon.keel/"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="https://twitter.com/Tiedexoxo"><ion-icon name="logo-twitter"></ion-icon></a>
+            </div>
+            <div class="Navbar">
+            <e href="#">01</e><a href="resume.html">Resume</a>
+            <e href="#"">02</e> <a href="code.html">Code</a>
+            <e href="#">03</e><a href="about.html">About</a>
+            <e href="#">04</e><a href="contact.html">Contact</a>
+            </div>
+        </div>
+    <div class="text-box">
+            <div class="text-box-all">  
+        <h1>Resume</h1>
+        <p>Howdy! My name is Stevon Keel, 21 years old and I'm a first year computer science student</p>
+        <p>in Helsinki university. I mainly write Java code but I also do front end for fun</p>
+        <p>Main operating systems I use are linux arch and windows.</p>
+        <div class="text-box-left-right" data-aos="fade-up" data-aos-delay="500" data-aos-duration="2000"> 
+        <div class="text-box-left" >
+            
+            <h2>Summary</h2>
+            <h3>Minecraft Spigot</h3>
+            <p>1 year of experience in hosting, designing, updating servers and </p>
+            <p>plugins. Main tools are Java, Git, Spigot and Maven.</p>
+            <br>
+            <h3>Web Development</h3>
+            <p>6+ months of experience using HTML/CSS/JS/Jquery to make websites </p>
+            <p>for personal use and trying different styles, features and</p>
+            <p>animation  while keeping responsive web desing in mind. </p>
+            
+        </div>        
+        <div class="text-box-right">
+            <h2>Education</h2>
+            <h3>Helsinki University</h3>
+            <h5>2022-Present</h5>
+            <p>Studying computer science bachelor and masters degree (3y+2y).</p>
+            <p>Currently in my first year.</p>
+            <br>
+            <h3>Lumo High School</h3>
+            <h5>2017-2020</h5>
+            <p>Finnish matriculation examination  completed successfully in 2020</p>
+            <p>Main studies Math, Philosophy, Finnish, Civics and A level English.  </p>
+        </div>
+    </div>
+</div>
+<div class="wrapper" data-aos="slide-up" data-aos-delay="500" data-aos-duration="2000">
+            <h1>Code</h1>
+            <p>Some of my favorite projects listed</p>
+                <div class="carousel owl-carousel">
+                    <div class="card card-1">ForgedKits</div>
+                    <div class="card card-2">ForgedSpawn</div>
+                    <div class="card card-3">ForgedFriends</div>
+                    <div class="card card-4">ForgedEssentials</div>
+                    <div class="card card-5">ForgedHousing</div>
+                </div>
+                <div class="code-links-java">
+                    <div class="carousel owl-carousel">
+                        <div class="card card-6">A</div>
+                        <div class="card card-7">B</div>
+                        <div class="card card-8">C</div>
+                        <div class="card card-9">D</div>
+                        <div class="card card-10">E</div>
+                    </div>
+                </div>
+            </div>
+    </div> 
+    </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script type="text/javascript"> 
+        window.addEventListener("scroll", function(){
+            var menu = document.querySelector("menu");
+            menu.classList.toggle("sticky", window.scrollY > 0) 
+        })
+    </script>
+
+    <script>
+        $(".carousel").owlCarousel({
+            margin: 10,
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 2000,
+            autoplayHoverPause: true,
+            responsive: {
+                0:{
+                    items: 1,
+                    nav: false
+                },
+                600:{
+                    items: 2,
+                    nav: false
+                },
+                1000:{
+                    items: 3,
+                    nav: false
+                }
+            }
+        });
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>

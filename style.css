@@ -7,37 +7,80 @@
 }
 .main{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-color: #0a192f;
+    z-index: 10000px;
+    
 }   
 body{
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    min-height: 100vh; 
+    overflow-y: auto;
+overflow-x: hidden;
 }
 
 .text-box{
     color: #fff;
     position: absolute;
-    top: 45%;
+    top: 9%;
     right: 20%;
     font-size: 25px;
-    text-align: center;
 }
+.text-box-left-right{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.text-box-right{
+    margin: 50px 5;
+}
+
+
 
 .text-box e{
     color: #64ffda;
     font-size: 15px;
 }
+.text-box h1{
+    font-size: 35px;
+    margin: 15px 0;
+    text-decoration: underline;
+    text-decoration-color: #64ffda;
+    text-decoration-thickness: 2px;
+}
+.text-box h5{
+
+    font-size: 15px;
+    background: #3e3e3e;
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.text-box h2{
+font-size: 35px;
+margin: 50px 0;   
+color: #64ffda
+}
+
+.text-box h3{
+    color: #64ffda
+}
+
+.text-box p{
+    font-size: 17px;
+}
 
 
 .menu{
      justify-content: space-around;
-    width: 100%;
-     min-height: 9vh;
-    background-color: #121227;
-    background: transparent;
+    width: 12%;
+    height: 120vh;
+    position: relative;
+    background-color: black;
+    z-index: 1000px;
 }
 #logo{
     color: #fff;
@@ -46,7 +89,14 @@ body{
     float: left;
     padding: 24px;
     background: url(logo.png);
+
     
+}
+
+.social-media{
+    display: flex;
+    margin: 1px;
+    padding-top:
 }
 .resize{
     width: 50px;
@@ -60,11 +110,12 @@ body{
     text-decoration: none;
     margin: 20px;
     color: #fff;
-    font-size: 15px;
+    font-size: 20px;
     letter-spacing: 2px;;
     padding: 6px;
-    display:inline-block;
-    
+    display: block;
+    position: relative;
+
 }
 .menu e{
     color: #64ffda;
@@ -77,14 +128,95 @@ body{
     font-size: 15px;
     letter-spacing: 2px;
     padding: 10px;
-    background-color: transparent;
     border-radius:5rem;
     line-height: 1cm;
     border: 15px #64ffda;
     float: right;
+    position: relative;
 }
 
 .menu a:hover{
     color: #64ffda;
 
+}
+
+main.sticky{
+    padding: 5px 100px;
+    background-color: #fff;
+}
+
+.wrapper{
+    width: 100%;
+}
+
+.wrapper .carousel{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 30pz;
+
+}
+.carousel .card{
+    line-height: 250px;
+    text-align: center;
+    color: #fff;
+    font-size: 90px;
+    font-weight: 600;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+    font-size: 40px;
+
+}
+
+.carousel .card-1{
+    background: url(pvp.png);
+}
+
+.carousel .card-2{
+    background: url(royale.png)
+}
+.carousel .card-3{
+    background: url(squad.png);
+}
+.carousel .card-4{
+    background: #f26522;
+}
+.carousel .card-5{
+    background: url(house.png);
+}
+
+.carousel .card-6{
+    background: #64ffda;
+}
+
+.carousel .card-7{
+    background: #0072bc;
+}
+.carousel .card-8{
+    background: #39b54a;
+}
+.carousel .card-9{
+    background: #f26522;
+}
+.carousel .card-10{
+    background: #630360;
+}
+
+.owl-dot{
+    text-align: center;
+    margin-top: 40px;
+}
+.owl-dot{
+    height: 15px;
+    width: 45px;
+    border-radius: 25px;
+    cursor: pointer;
+    outline: none; 
+    border: 2px solid #0072bc!important;
+    transition: all 0.3 ease;
+}
+
+.owl-dot:hover,
+.owl-dot.activate{
+    background: #0072bc!important;
 }
