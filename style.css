@@ -13,12 +13,13 @@
     
 }   
 body{
-    display: flex;
+    
     align-items: center;
     justify-content: center;
     min-height: 100vh; 
     overflow-y: auto;
-overflow-x: hidden;
+    overflow-x: hidden;
+    background-color: #0a192f;
 }
 
 .text-box{
@@ -75,12 +76,13 @@ color: #64ffda
 
 
 .menu{
-     justify-content: space-around;
+    justify-content: space-around;
     width: 12%;
-    height: 120vh;
+    height: 130vh;
     position: relative;
-    background-color: black;
-    z-index: 1000px;
+    background-color: #131415;;
+    visibility: true;
+    align-items: center;
 }
 #logo{
     color: #fff;
@@ -89,23 +91,39 @@ color: #64ffda
     float: left;
     padding: 24px;
     background: url(logo.png);
-
-    
 }
 
 .social-media{
     display: flex;
     margin: 1px;
-    padding-top:
+   visibility: visible;
+   position: sticky;
+    top: 7%
+
 }
 .resize{
-    width: 50px;
+    width: 55px;
     height: auto;
-    margin: -5px 3px;
+    margin: -5px 90px;
     padding-top: 2rem;
-    padding: -3px;
+    padding: -2px;
+    position: sticky;
+    top: 0%;
 }
 
+.navbar{
+    position: sticky;
+    top: 15.1%;
+}   
+
+@media(max-width: 800px){
+   .navbar{
+        display: none; 
+    }
+    .menu{
+        display: none;
+    }
+}
 .menu a{
     text-decoration: none;
     margin: 20px;
@@ -115,10 +133,12 @@ color: #64ffda
     padding: 6px;
     display: block;
     position: relative;
+    position: sticky;
 
 }
 .menu e{
     color: #64ffda;
+    
     
 }
 .menu p{
@@ -132,7 +152,7 @@ color: #64ffda
     line-height: 1cm;
     border: 15px #64ffda;
     float: right;
-    position: relative;
+    position: relative
 }
 
 .menu a:hover{
@@ -165,7 +185,13 @@ main.sticky{
     border-radius: 10px;
     box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
     font-size: 40px;
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+}
 
+.carousel .card:hover{
+    transform: scale(1.1);
+    
 }
 
 .carousel .card-1{
@@ -219,4 +245,40 @@ main.sticky{
 .owl-dot:hover,
 .owl-dot.activate{
     background: #0072bc!important;
+}
+
+
+.about-me{
+    background-color: red;
+    border-radius: 1.15rem;
+    width: 55%;
+    height: auto;
+    position: relative;
+    line-height: 2cm;
+    text-decoration: none;
+    letter-spacing: 1px;
+    top: 90px;
+    left: 200px;
+    text-align: center;
+    background-image: url(about.png);
+    background-size: 20cm;
+    background-position-y: 8cm;
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+}
+
+.abouttxt{
+    font-size: 45px;
+    font-weight: 600;
+    top: 20%;
+    position: relative;
+}
+
+.about-me button{
+    position: relative;
+    top: -15%;
+}
+
+.about-me .img:hover{
+    transform: scale(1.1)
 }
