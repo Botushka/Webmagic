@@ -116,7 +116,8 @@ color: #64ffda
     top: 15.1%;
 }   
 
-@media(max-width: 800px){
+
+@media(max-width: 1200px){
    .navbar{
         display: none; 
     }
@@ -124,6 +125,14 @@ color: #64ffda
         display: none;
     }
 }
+  
+  /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+  @media screen and (max-width: 700px) {
+    div.text-box {
+      font-size: 35px;
+    }
+  }
+
 .menu a{
     text-decoration: none;
     margin: 20px;
@@ -249,36 +258,38 @@ main.sticky{
 
 
 .about-me{
-    background-color: red;
+    background-color: #fff;
     border-radius: 1.15rem;
     width: 55%;
     height: auto;
-    position: relative;
     line-height: 2cm;
     text-decoration: none;
     letter-spacing: 1px;
     top: 90px;
     left: 200px;
-    text-align: center;
     background-image: url(about.png);
     background-size: 20cm;
     background-position-y: 8cm;
     transform: scale(1);
     transition: 0.3s ease-in-out;
+    text-align: center;
 }
 
-.abouttxt{
+.about-txt{
     font-size: 45px;
     font-weight: 600;
     top: 20%;
-    position: relative;
+    }
+  
+
+.button{
+    display: absolute;
+    appearance: none;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: red;
+    
 }
 
-.about-me button{
-    position: relative;
-    top: -15%;
-}
-
-.about-me .img:hover{
-    transform: scale(1.1)
-}
