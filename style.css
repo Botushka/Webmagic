@@ -6,32 +6,31 @@
     font-family: 'Inconsolata', monospace;    
 }
 .main{
-    width: 100%;
-    height: 100%;
+    
     background-color: #0a192f;
-    z-index: 10000px;
     
 }   
 body{
     
-    align-items: center;
-    justify-content: center;
     min-height: 100vh; 
     overflow-y: auto;
-    overflow-x: hidden;
+    overflow-x:hidden;
+    max-width: 85%;
     background-color: #0a192f;
 }
 
 .text-box{
     color: #fff;
-    position: absolute;
-    top: 9%;
-    right: 20%;
+    position:relative;
+    top: 5%;
+    right: -15%;
     font-size: 25px;
+    
 }
 .text-box-left-right{
     display: grid;
     grid-template-columns: 1fr 1fr;
+
 }
 
 .text-box-right{
@@ -40,48 +39,50 @@ body{
 
 
 
-.text-box e{
+ e{
     color: #64ffda;
     font-size: 15px;
 }
-.text-box h1{
-    font-size: 35px;
-    margin: 15px 0;
-    text-decoration: underline;
-    text-decoration-color: #64ffda;
-    text-decoration-thickness: 2px;
-}
-.text-box h5{
 
-    font-size: 15px;
+h1{font-size: 35px;}
+h2{font-size: 35px;
+    color: #64ffda}
+p{ font-size: 17px;}
+h5{
+     font-size: 15px;
     background: #3e3e3e;
-    padding: 5px 15px;
+    padding-top: 5px 15px;
     display: inline-block;
     font-weight: 600;
     margin-bottom: 10px;
 }
-.text-box h2{
-font-size: 35px;
-margin: 50px 0;   
-color: #64ffda
-}
 
-.text-box h3{
+
+h3{
     color: #64ffda
 }
 
-.text-box p{
+p{
     font-size: 17px;
 }
 
+@media all and (max-width: 1200px){
+
+    h1{font-size: 32px;}
+h2 {font-size: 20px;
+    color: #64ffda}
+p{ font-size: 16px;}
+.text-box-left-right{
+    display: blocK;
+}
+}
 
 .menu{
     justify-content: space-around;
-    width: 12%;
-    height: 130vh;
-    position: relative;
+    width: 7cm;
+    min-height: 130vh;
+    position: fixed;
     background-color: #131415;;
-    visibility: true;
     align-items: center;
 }
 #logo{
@@ -102,11 +103,10 @@ color: #64ffda
 
 }
 .resize{
-    width: 55px;
-    height: auto;
+    max-width: 55px;
+    min-height: auto;
     margin: -5px 90px;
     padding-top: 2rem;
-    padding: -2px;
     position: sticky;
     top: 0%;
 }
@@ -117,22 +117,6 @@ color: #64ffda
 }   
 
 
-@media(max-width: 1200px){
-   .navbar{
-        display: none; 
-    }
-    .menu{
-        display: none;
-    }
-}
-  
-  /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
-  @media screen and (max-width: 700px) {
-    div.text-box {
-      font-size: 35px;
-    }
-  }
-
 .menu a{
     text-decoration: none;
     margin: 20px;
@@ -141,7 +125,6 @@ color: #64ffda
     letter-spacing: 2px;;
     padding: 6px;
     display: block;
-    position: relative;
     position: sticky;
 
 }
@@ -175,14 +158,14 @@ main.sticky{
 }
 
 .wrapper{
-    width: 100%;
+    max-width: 100%;
 }
 
 .wrapper .carousel{
     max-width: 1200px;
     margin: auto;
     padding: 0 30pz;
-
+    right: 70px;
 }
 .carousel .card{
     line-height: 250px;
@@ -242,8 +225,8 @@ main.sticky{
     margin-top: 40px;
 }
 .owl-dot{
-    height: 15px;
-    width: 45px;
+    min-height: 15px;
+    max-width: 45px;
     border-radius: 25px;
     cursor: pointer;
     outline: none; 
@@ -260,7 +243,7 @@ main.sticky{
 .about-me{
     background-color: #fff;
     border-radius: 1.15rem;
-    width: 55%;
+    max-width: 30%;
     height: auto;
     line-height: 2cm;
     text-decoration: none;
