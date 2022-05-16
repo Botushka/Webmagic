@@ -12,7 +12,7 @@
 }   
 body{
     
-    min-height: 100vh; 
+    min-height: 1900vh; 
     overflow-y: auto;
     overflow-x:hidden;
     max-width: 85%;
@@ -20,13 +20,15 @@ body{
 }
 
 .text-box{
+    padding-top: 100px;
     color: #fff;
     position:relative;
     top: 5%;
     right: -15%;
     font-size: 25px;
-    
-}
+    padding-left: 3cm;
+    }
+
 .text-box-left-right{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -34,9 +36,13 @@ body{
 }
 
 .text-box-right{
-    margin: 50px 5;
+    margin-right: 0px;
+    padding-top: 35px;
 }
 
+.text-box-left{
+    margin-left: 300px;
+}
 
 
  e{
@@ -75,15 +81,43 @@ p{ font-size: 16px;}
 .text-box-left-right{
     display: blocK;
 }
+.menu{
+    visibility: hidden;
+}
+.social-media{
+    visibility: hidden;
+}
+.about-me{
+    max-width: 90%;
+}
+}
+
+@media all and (max-width: 850px){
+
+    
+    h1{font-size: 28px;}
+h2 {font-size: 20px;
+    color: #64ffda}
+p{ font-size: 14px;}
+.text-box{
+    padding-left: 0cm;
+}
+.text-box-left-right{
+    display: blocK;
+}
+
 }
 
 .menu{
     justify-content: space-around;
-    width: 7cm;
+    max-width: 7cm;
     min-height: 130vh;
     position: fixed;
     background-color: #131415;;
     align-items: center;
+    margin-right: 50px;
+    
+    
 }
 #logo{
     color: #fff;
@@ -97,7 +131,7 @@ p{ font-size: 16px;}
 .social-media{
     display: flex;
     margin: 1px;
-   visibility: visible;
+   
    position: sticky;
     top: 7%
 
@@ -157,15 +191,30 @@ main.sticky{
     background-color: #fff;
 }
 
+.about{
+    width: 118%;
+    height: 100%;
+    background: #0c2736;
+    margin-top: 50px;
+    display: absolute;
+    border: 500px solid #0c2736;
+}
+.about .about-all .about-all-box{
+    color: #ffF
+}
+
 .wrapper{
     max-width: 100%;
+    text-align: center;
+    
 }
 
 .wrapper .carousel{
     max-width: 1200px;
     margin: auto;
     padding: 0 30pz;
-    right: 70px;
+    right: 20px;
+
 }
 .carousel .card{
     line-height: 250px;
@@ -227,10 +276,10 @@ main.sticky{
 .owl-dot{
     min-height: 15px;
     max-width: 45px;
-    border-radius: 25px;
+    border-radius: 125px;
     cursor: pointer;
     outline: none; 
-    border: 2px solid #0072bc!important;
+    border: 10px solid #0072bc!important;
     transition: all 0.3 ease;
 }
 
@@ -239,40 +288,14 @@ main.sticky{
     background: #0072bc!important;
 }
 
-
-.about-me{
-    background-color: #fff;
-    border-radius: 1.15rem;
-    max-width: 30%;
-    height: auto;
-    line-height: 2cm;
-    text-decoration: none;
-    letter-spacing: 1px;
-    top: 90px;
-    left: 200px;
-    background-image: url(about.png);
-    background-size: 20cm;
-    background-position-y: 8cm;
-    transform: scale(1);
-    transition: 0.3s ease-in-out;
+.languages{
+    margin-top: 100px;
     text-align: center;
 }
 
-.about-txt{
-    font-size: 45px;
-    font-weight: 600;
-    top: 20%;
-    }
-  
-
-.button{
+.languages .pics{
     display: absolute;
-    appearance: none;
-    background: none;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    background-color: red;
-    
+    height: auto;
+    align-items: center;
+    margin-top: 50px;
 }
-
